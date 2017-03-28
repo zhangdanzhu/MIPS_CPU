@@ -1,7 +1,0 @@
-module regfile(
-	input 
-	);
-
-
-
-endmodule

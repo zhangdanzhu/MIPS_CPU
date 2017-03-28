@@ -1,0 +1,106 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 27 13:20:16 2017
+| Host         : dell running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pipeline_mips_cpu_control_sets_placed.rpt
+| Design       : pipeline_mips_cpu
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    53 |
+| Minimum Number of register sites lost to control set restrictions |    22 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              70 |           49 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             442 |          177 |
+| Yes          | No                    | No                     |            1032 |          542 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             202 |           79 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------+----------------------------------+------------------+----------------+
+|    Clock Signal    |            Enable Signal           |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------+----------------------------------+------------------+----------------+
+| ~clk_BUFG          |                                    |                                  |                1 |              2 |
+|  clk_raw_IBUF_BUFG | u_seg/choose[0]_i_1_n_1            | u_seg/choose[1]_i_1_n_1          |                1 |              4 |
+|  clk_raw_IBUF_BUFG | u_seg/choose[0]_i_1_n_1            |                                  |                4 |              8 |
+|  clk_BUFG          | u_hazard/r_branch/BRANCH           | choose_IBUF[0]                   |                8 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[3][31][0]     |                                  |               14 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[4][31][0]     |                                  |               12 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[5][31][0]     |                                  |               15 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[6][31][0]     |                                  |               14 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[7][31][0]     |                                  |               16 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[19][31][0]    |                                  |               20 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[9][31][0]     |                                  |               17 |             32 |
+|  clk_raw_IBUF_BUFG |                                    | u_clkctr/k[0]_i_1__0_n_1         |                8 |             32 |
+|  n_0_1695_BUFG     |                                    |                                  |               32 |             32 |
+|  clk_BUFG          | u_MEM_WB/syscall0/Dout_reg[0]_0[0] | choose_IBUF[0]                   |                9 |             32 |
+|  clk_BUFG          | u_MEM_WB/syscall0/E[0]             | choose_IBUF[0]                   |               16 |             32 |
+|  clk_BUFG          | u_hazard/r_loaduse/LOADUSE         | choose_IBUF[0]                   |                8 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[0][31][0]     |                                  |               19 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[10][31][0]    |                                  |               16 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[11][31][0]    |                                  |               20 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[12][31][0]    |                                  |               20 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[13][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[16][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[14][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[15][31][0]    |                                  |               15 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[17][31][0]    |                                  |               21 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[18][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[8][31][0]     |                                  |               16 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[1][31][0]     |                                  |               20 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[20][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[21][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[22][31][0]    |                                  |               18 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[23][31][0]    |                                  |               19 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[24][31][0]    |                                  |               17 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[25][31][0]    |                                  |               15 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[26][31][0]    |                                  |               17 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[27][31][0]    |                                  |               15 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[28][31][0]    |                                  |               15 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[29][31][0]    |                                  |               16 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[2][31][0]     |                                  |               13 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[30][31][0]    |                                  |               16 |             32 |
+| ~clk_BUFG          | u_MEM_WB/RW/regs_reg[31][31][0]    |                                  |               14 |             32 |
+|  clk_raw_IBUF_BUFG |                                    |                                  |               16 |             36 |
+|  clk_BUFG          | u_hazard/r_loaduse/en0             | u_hazard/r_branch/Dout_reg[31]   |               37 |             70 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_7          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_6          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_5          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_4          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_2          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_1          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_0          |                                  |               32 |            128 |
+|  clk_BUFG          | u_EX_MEM/R/Dout_reg[31]_3          |                                  |               32 |            128 |
+|  clk_BUFG          |                                    | u_hazard/r_loaduse/Dout_reg[0]_0 |               57 |            150 |
+|  clk_BUFG          |                                    | choose_IBUF[0]                   |              112 |            260 |
++--------------------+------------------------------------+----------------------------------+------------------+----------------+
+
+

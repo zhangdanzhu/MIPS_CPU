@@ -1,0 +1,945 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Feb 27 13:18:00 2017
+# Process ID: 10284
+# Log file: C:/Users/pc/Desktop/project_1/project_1.runs/synth_1/pipeline_mips_cpu.vds
+# Journal file: C:/Users/pc/Desktop/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pipeline_mips_cpu.tcl -notrace
+Command: synth_design -top pipeline_mips_cpu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 264.152 ; gain = 86.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pipeline_mips_cpu' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/pipeline_mips_cpu.v:23]
+INFO: [Synth 8-638] synthesizing module 'clkcontrol' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/new/clkcontrol.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clkcontrol' (1#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/new/clkcontrol.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos' (3#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ROM.v:23]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'E:\benchmark.hex' is read successfully [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ROM.v:35]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (4#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ROM.v:23]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/IF_ID.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (5#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/IF_ID.v:3]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/control_unit.v:3]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (6#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/control_unit.v:3]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ID_EX.v:3]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized0' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized0' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized1' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized1' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized2' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized2' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized3' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized3' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized4' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized4' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized5' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized5' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized6' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized6' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized7' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized7' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized8' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized8' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized9' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized9' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized10' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized10' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized11' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized11' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized12' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized12' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized13' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized13' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized14' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized14' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized15' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized15' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized16' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized16' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized17' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized17' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized18' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized18' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized19' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized19' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized20' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized20' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized21' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized21' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized22' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized22' (7#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (8#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ID_EX.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:35]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/EX_MEM.v:3]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized23' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized23' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized24' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized24' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized25' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized25' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized26' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized26' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized27' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized27' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized28' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized28' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized29' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized29' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized30' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized30' (9#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (10#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/EX_MEM.v:3]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/RAM.v:23]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/MEM_WB.v:3]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized31' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized31' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized32' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized32' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized33' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized33' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized34' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized34' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_pos__parameterized35' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_pos__parameterized35' (11#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_pos.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (12#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/MEM_WB.v:3]
+INFO: [Synth 8-638] synthesizing module 'hazard_unit' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/hazard_unit.v:3]
+INFO: [Synth 8-638] synthesizing module 'reg_neg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_neg.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_neg' (13#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/reg_neg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hazard_unit' (14#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/hazard_unit.v:3]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_display' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/seven_seg_display.v:22]
+	Parameter interval bound to: 5000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'number_to_7seg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/number_to_7seg.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/number_to_7seg.v:27]
+INFO: [Synth 8-256] done synthesizing module 'number_to_7seg' (15#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/number_to_7seg.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/seven_seg_display.v:47]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_display' (16#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/seven_seg_display.v:22]
+INFO: [Synth 8-256] done synthesizing module 'pipeline_mips_cpu' (17#1) [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/pipeline_mips_cpu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 301.191 ; gain = 123.102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 301.191 ; gain = 123.102
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/pc/Desktop/project_1/project_1.srcs/constrs_1/new/cpu.xdc]
+Finished Parsing XDC File [C:/Users/pc/Desktop/project_1/project_1.srcs/constrs_1/new/cpu.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 611.977 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "k" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "ROM_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ori" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "srav" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mfc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eret" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "syscall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sltu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nor_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "or_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "srl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "and_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "xor_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bgtz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addiu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bne" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slti" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sll" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zero_Rs_equal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zero_Rt_equal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "choose" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'Result2_reg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'UOF_reg' [C:/Users/pc/Desktop/project_1/project_1.srcs/sources_1/imports/ubuntu(1.1display)/ALU.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	 220 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	  16 Input      8 Bit        Muxes := 8     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 33    
+	  14 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pipeline_mips_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 2     
+Module clkcontrol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 220 Input     32 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 48    
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module reg_pos__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module reg_pos__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reg_pos__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 5     
+Module reg_pos__parameterized23 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reg_pos__parameterized24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized31 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reg_pos__parameterized32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized33 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized34 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_pos__parameterized35 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module hazard_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module number_to_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module seven_seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "k" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slti" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ori" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addiu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "and_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sltu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "xor_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "srav" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nor_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "srl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "or_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sll" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mfc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eret" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "syscall" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+INFO: [Synth 8-5546] ROM "choose" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 611.977 ; gain = 433.887
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------------+----------------+-----------+----------------------+-------------------+--------------------------+
+|Module Name       | RTL Object     | Inference | Size (Depth x Width) | Primitives        | Hierarchical Name        | 
++------------------+----------------+-----------+----------------------+-------------------+--------------------------+
+|pipeline_mips_cpu | u_RAM/RAM__reg | Implied   | 1 K x 32             | RAM128X1D x 256   | pipeline_mips_cpu/ram__1 | 
++------------------+----------------+-----------+----------------------+-------------------+--------------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 16     | 16     | 30     | 25     | 30     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 18     | 16     | 31     | 25     | 47     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ID_EX/\offset/Dout_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_IF_ID/I/Dout_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ID_EX/\shamt/Dout_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_seg/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[31] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[27] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[26] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[25] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[24] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[23] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[22] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[21] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[20] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[19] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[18] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[17] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[16] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[15] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[14] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[13] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[12] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[11] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[10] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[9] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[8] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[7] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[6] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\shamt/Dout_reg[5] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[27] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[26] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[25] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[24] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[23] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[22] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[21] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[20] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[19] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[18] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[17] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[16] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\imm/Dout_reg[15] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[1] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[0] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\mfc0/Dout_reg[0] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[31] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[30] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[29] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[28] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[27] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[26] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[25] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[24] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[23] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[22] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[21] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[20] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[19] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[18] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[17] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[16] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[15] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[14] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[13] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[12] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[11] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[10] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[9] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[8] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[7] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[6] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[5] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[4] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[3] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[2] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[1] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[0] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (UOF_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\seg_reg[7] ) is unused and will be removed from module seven_seg_display.
+WARNING: [Synth 8-3332] Sequential element (\u_IF_ID/I/Dout_reg[30] ) is unused and will be removed from module pipeline_mips_cpu.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\MemtoReg/Dout_reg[0] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[17] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[31] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[13] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[14] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[15] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[16] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[10] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[11] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[12] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[3] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[4] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[2] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[5] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\offset/Dout_reg[6] ) is unused and will be removed from module ID_EX.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 611.977 ; gain = 433.887
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 611.977 ; gain = 433.887
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 652.344 ; gain = 474.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 655.277 ; gain = 477.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   391|
+|3     |DSP48E1   |     3|
+|4     |LUT1      |   309|
+|5     |LUT2      |   168|
+|6     |LUT3      |  1151|
+|7     |LUT4      |   195|
+|8     |LUT5      |   283|
+|9     |LUT6      |  1191|
+|10    |MUXF7     |   366|
+|11    |MUXF8     |    21|
+|12    |RAM128X1D |   256|
+|13    |FDRE      |  1710|
+|14    |FDSE      |     4|
+|15    |LD        |    32|
+|16    |IBUF      |    10|
+|17    |OBUF      |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------+-------------------------+------+
+|      |Instance      |Module                   |Cells |
++------+--------------+-------------------------+------+
+|1     |top           |                         |  6109|
+|2     |  counter_b   |counter                  |    72|
+|3     |  counter_l   |counter_0                |    72|
+|4     |  counter_t0  |counter_1                |   206|
+|5     |  pc_reg      |reg_pos                  |   265|
+|6     |  u_ALU       |ALU                      |    55|
+|7     |  u_EX_MEM    |EX_MEM                   |   231|
+|8     |    MemWrite  |reg_pos__parameterized26 |     1|
+|9     |    MemtoReg  |reg_pos__parameterized25 |    33|
+|10    |    R         |reg_pos_14               |   105|
+|11    |    R2        |reg_pos_15               |    48|
+|12    |    RW        |reg_pos__parameterized23 |     8|
+|13    |    RegWrite  |reg_pos__parameterized28 |     1|
+|14    |    jal       |reg_pos__parameterized24 |     1|
+|15    |    pc_4      |reg_pos_16               |    32|
+|16    |    sh        |reg_pos__parameterized27 |     1|
+|17    |    syscall   |reg_pos__parameterized29 |     1|
+|18    |  u_ID_EX     |ID_EX                    |  2328|
+|19    |    ALUCTR    |reg_pos__parameterized0  |   166|
+|20    |    ALUSrc    |reg_pos__parameterized13 |     1|
+|21    |    ERs       |reg_pos__parameterized17 |   297|
+|22    |    ERt       |reg_pos__parameterized18 |   116|
+|23    |    MRs       |reg_pos__parameterized19 |   998|
+|24    |    MRt       |reg_pos__parameterized20 |    36|
+|25    |    MemWrite  |reg_pos__parameterized5  |     1|
+|26    |    R1        |reg_pos_8                |    34|
+|27    |    R2        |reg_pos_9                |    32|
+|28    |    RW        |reg_pos__parameterized1  |     8|
+|29    |    RegWrite  |reg_pos__parameterized10 |     1|
+|30    |    beq       |reg_pos__parameterized6  |     3|
+|31    |    bgtz      |reg_pos__parameterized8  |     1|
+|32    |    bne       |reg_pos__parameterized7  |     1|
+|33    |    imm       |reg_pos_10               |    11|
+|34    |    j         |reg_pos__parameterized2  |     1|
+|35    |    jal       |reg_pos__parameterized3  |     1|
+|36    |    jr        |reg_pos__parameterized21 |    61|
+|37    |    lw        |reg_pos__parameterized22 |     1|
+|38    |    offset    |reg_pos_11               |    10|
+|39    |    pc_4      |reg_pos_12               |    71|
+|40    |    sel1      |reg_pos__parameterized15 |   280|
+|41    |    sel2      |reg_pos__parameterized16 |     2|
+|42    |    sh        |reg_pos__parameterized9  |     1|
+|43    |    shamt     |reg_pos_13               |     5|
+|44    |    shift     |reg_pos__parameterized12 |   188|
+|45    |    syscall   |reg_pos__parameterized11 |     1|
+|46    |  u_IF_ID     |IF_ID                    |   132|
+|47    |    I         |reg_pos_6                |   100|
+|48    |    pc_4      |reg_pos_7                |    32|
+|49    |  u_MEM_WB    |MEM_WB                   |   140|
+|50    |    D__0      |reg_pos_4                |    32|
+|51    |    RW        |reg_pos__parameterized31 |    37|
+|52    |    RegWrite  |reg_pos__parameterized33 |     1|
+|53    |    jal       |reg_pos__parameterized32 |     1|
+|54    |    pc_4      |reg_pos_5                |    64|
+|55    |    syscall0  |reg_pos__parameterized34 |     5|
+|56    |  u_RAM       |RAM                      |   384|
+|57    |  u_clkctr    |clkcontrol               |   120|
+|58    |  u_hazard    |hazard_unit              |     7|
+|59    |    r_branch  |reg_neg                  |     3|
+|60    |    r_loaduse |reg_neg_3                |     4|
+|61    |  u_rega0     |reg_pos_2                |    32|
+|62    |  u_regfile   |regfile                  |  1864|
+|63    |  u_seg       |seven_seg_display        |   141|
++------+--------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 731.969 ; gain = 553.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 731.969 ; gain = 207.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 731.969 ; gain = 553.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 692 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 1026 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 288 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+226 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 731.969 ; gain = 522.113
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 731.969 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 13:19:06 2017...

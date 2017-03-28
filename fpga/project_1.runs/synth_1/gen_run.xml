@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1488172679">
+  <File Type="RDS-DCP" Name="pipeline_mips_cpu.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="pipeline_mips_cpu_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="pipeline_mips_cpu_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="pipeline_mips_cpu.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="pipeline_mips_cpu.vds"/>
+  <File Type="RDS-UTIL" Name="pipeline_mips_cpu_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pipeline_mips_cpu_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pipeline_mips_cpu_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/number_to_7seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/number_to_7seg.v"/>
+        <Attr Name="ImportTime" Val="1488009129"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/reg_neg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/reg_neg.v"/>
+        <Attr Name="ImportTime" Val="1487928884"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/reg_pos.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/reg_pos.v"/>
+        <Attr Name="ImportTime" Val="1487928860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/seven_seg_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/seven_seg_display.v"/>
+        <Attr Name="ImportTime" Val="1488009104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1487948706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/control_unit.v"/>
+        <Attr Name="ImportTime" Val="1487948671"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/RAM.v"/>
+        <Attr Name="ImportTime" Val="1487904641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/hazard_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/hazard_unit.v"/>
+        <Attr Name="ImportTime" Val="1487948684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/ROM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/ROM.v"/>
+        <Attr Name="ImportTime" Val="1488006543"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1487948650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1487948691"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/ALU.v"/>
+        <Attr Name="ImportTime" Val="1487925845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/regfile.v"/>
+        <Attr Name="ImportTime" Val="1487903197"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1487948698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clkcontrol.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ubuntu(1.1display)/pipeline_mips_cpu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ubuntu(1.1display)/pipeline_mips_cpu.v"/>
+        <Attr Name="ImportTime" Val="1487993485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pipeline_mips_cpu"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cpu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
